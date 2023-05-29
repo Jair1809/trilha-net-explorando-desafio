@@ -1,21 +1,21 @@
-namespace DesafioProjetoHospedagem.Models;
+namespace ChallengeProjectHosting.Models;
 
-public class Pessoa
+public class Person
 {
-    public Pessoa() { }
+    public Person() { }
 
-    public Pessoa(string nome)
+    public Person(string name)
     {
-        Nome = nome;
+        Name = name;
     }
 
-    public Pessoa(string nome, string sobrenome)
+    public Person(string name, string lastname)
     {
-        Nome = nome;
-        Sobrenome = sobrenome;
+        Name = name;
+        Lastname = lastname;
     }
 
-    public string Nome { get; set; }
-    public string Sobrenome { get; set; }
-    public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
+    public string Name { get; set; }
+    public string Lastname { get; set; }
+    public string Fullname => $"{Name} {Lastname}".ToUpper();
 }
